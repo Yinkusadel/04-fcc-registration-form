@@ -25,9 +25,9 @@
 
 
          <fieldset>
-          <label><input type="file">Upload a profile picture: </label>
-          <label>Input your age (years): <input type="number" min="13" max="120" /></label>
-          <label>How did you hear about us?
+          <label for="profile-picture">Upload a profile picture: <input type="file" id="profile-picture" name="file"/></label>
+          <label for="age">Input your age (years): <input type="number" min="13" max="120" id="age" name="age"/></label>
+          <label for="referrer">How did you hear about us?
            <select>
             <option value="">(select one)</option>
             <option value="1">freeCodeCamp News</option>
@@ -35,6 +35,9 @@
             <option value="3">freeCodeCamp Forum</option>
             <option value="4">Other</option>
           </select>
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" rows="3" cols="30" placeholder="I like coding on the beach...." name="bio"></textarea>
         </label>
 
 
